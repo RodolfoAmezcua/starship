@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'open sans';
+    font-size: 18px;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 500px;
+    background-image: url(img/1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+header .textos{
+    margin-top:4%;
+}
+header .titulo{
+    font-size: 85px;
+}
+header .subtitulos{
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+.boton{
+    box-shadow: 1px 1px 1px gray;
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-left: 2%;
+}
+.boton:hover{
+    background-color: rgba(228, 106, 106, 0.445);
+	
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0 52px 0;
+}
+.sobre-nosotros{
+    color: rgb(37, 37, 37);
+    text-align: left;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.slogan{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 24px;
+    color: rgb(54, 54, 54);
+}
+.parrafo{
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(54, 54, 54);
+}
+#imagen1{
+    width: 70%;
+
+}
