@@ -78,7 +78,16 @@ header .subtitulos{
     line-height: 24px;
     color: rgb(54, 54, 54);
 }
-#imagen1{
+#imagen3{
     width: 70%;
 
+}
+.fondo {
+    height: 900px;
+    position: relative;
+    background-image: url(img/3.jpg);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 130px;
 }
