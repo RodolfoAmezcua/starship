@@ -72,22 +72,70 @@ header .subtitulos{
     color: rgb(54, 54, 54);
 }
 .parrafo{
-    margin-bottom: 13px;
+    height: 70%;
+    margin-bottom: 2%;
     font-weight: 300;
     text-align: justify;
     line-height: 24px;
     color: rgb(54, 54, 54);
+    width: 60%;
 }
-#imagen3{
-    width: 70%;
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.card {
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
 }
+
+.cards img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+/*.imagen img{
+    border-radius: 10%;
+    left: 60%;
+    top: 90%;
+    position: absolute;
+    width: 400px;
+    height: 320px;
+    object-fit: cover;
+}*/
 .fondo {
     height: 900px;
     position: relative;
-    background-image: url(img/3.jpg);
+    background-image: url(img/2.jpg);
     overflow: hidden;
     background-attachment: fixed;
     background-position: center;
     padding-top: 130px;
+}
+.clientes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cliente {
+    width: 30%;
+}
+
+.cliente img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20%;
 }
