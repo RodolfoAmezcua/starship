@@ -5,349 +5,164 @@
 
 }
 body{
-    font-family: 'open sans';
-    font-size: 18px;
+    margin: 0%;
     overflow-x: hidden;
 }
-header{
-    width: 100%;
-    height: 500px;
-    background-image: url(img/8.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    color: rgb(255, 155, 34);
-    text-align: center;
-}
-header .textos{
-    margin-top:4%;
-}
-header .titulo{
-    font-size: 85px;
-}
-header .subtitulos{
-    font-size: 42px;
-    font-weight: 300;
-    margin-bottom: 32px;
-}
-.boton{
-    display: inline-block;
-    padding: 6px;
-    width: 128px;
-    border: 1px solid rgb(255, 155, 34);
-    color: rgb(255, 155, 34);
-    font-size: 19px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 16px;
-    margin-left: 2%;
-}
-.boton:hover{
-    background-color: rgba(226, 113, 37, 0.445);
-	
-}
-
-
-.contenedor{
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-    padding: 52px 0 52px 0;
+.logo{
     position: absolute;
-    
+    margin-left: 3%;
+    margin-top: .5%;
 }
-#subtitulo2{
-    color: rgb(37, 37, 37);
-    text-align: left;
-    font-size: 42px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.sobre-nosotros{
-    color: rgb(37, 37, 37);
-    text-align: left;
-    font-size: 42px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    margin-left: 40%;
-}
-.imagen img{
+.titulo{
+
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: absolute;
     margin-left: 13%;
-    margin-top: 0%;
-    border-radius: 20%;
 }
-
-.parrafo{
-    height: 70%;
-    margin-bottom: 2%;
-    font-weight: 300;
-    text-align: justify;
-    line-height: 24px;
-    color: rgb(54, 54, 54);
-    width: 60%;   
-    margin-right: 60%; 
+.menu {
+    position: relative;
 }
-.parrafo2{
-    margin-top: 3%;
-    margin-right: 60%;
-
-    right: 10%;
+.menu nav {
+    display: block;
+    background: rgba(29, 29, 29);
+    overflow: hidden;
+    padding: .7em;
 }
-
-.cards {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.card {
-    margin: 20px 0;
-    width: 30%;
-    height: 250px;
-    text-align: center;
+.menu nav > a {
+    font-size: 16px;
+    float: right;
+    color: rgb(255, 255, 255);
     padding: 20px;
-    
+    transition: background .7s;
+    display: block;
+    text-decoration: none;
+    border-radius: 18px;
+}
+.menu nav > a:hover {
+    background: rgba(0, 0, 0, 0.377);
 }
 
-.cards img {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 100%;
+/*botón*/
+.menu .drop {
+    color: #fff;
+    padding: 2em;
+    background: rgb(29, 29, 29);
+    cursor: pointer;
+    display: none; /*ocultamos el botón*/
 }
-/*.imagen img{
-    border-radius: 10%;
-    left: 60%;
-    top: 90%;
-    position: absolute;
-    width: 400px;
-    height: 320px;
-    object-fit: cover;
+.menu .drop svg {
+    fill: rgb(255, 255, 255);
+    vertical-align: middle;
 }
-.fondo {
-    height: 900px;
-    position: relative;
-    background-image: url(img/fondo.jpg);
-    overflow: hidden;
-    background-attachment: fixed;
-    background-position: center;
-    padding-top: 130px;
-}*/
-.fondo{
-    background-color: rgb(0, 214, 198);
-    position: relative;
-    background-image: url(img/12.jpg);
-    overflow: hidden;
-    background-attachment: fixed;
-    background-position: center;
-    padding-top: 130px;
+@media only screen and (max-width: 768px) {
+    .menu {background: rgb(29, 29, 29);}
+    .menu .drop {display: inline-block;}/*volvemos a mostrar el botón*/
+    .menu nav {/*ahora nuestro menú es una lista flotante*/
+        position: absolute;
+        z-index: 600;
+        background: rgb(29, 29, 29);
+        min-width: 20rem;
+        display: none;
+        top: 100%;left: 0;
+    }
+    .menu nav > a {/*y los ítems se alinean verticalmente*/
+        float: none;
+        border: 0 none;
+    }
 }
-.clientes {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 64px;
+
+/*if => open*/
+.menu nav.open {
+    display: block;/*el menu aparece*/
+}
+.menu .drop.open {
+    background: rgba(0,0,0,0.65);/*el boton cambia de color*/
+}
+ header{
     width: 100%;
-    justify-content: space-between;
-}
-
-.cliente {
-    width: 30%;
-}
-
-.cliente img {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 20%;
-}
-.titulo-patrocinadores,
-.subtitulo-patrocinadores {
-    color: #000;
+    height: 400px;
+    background-image: url(img/office-932926_1920.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
     text-align: center;
 }
-.titulo-patrocinadores {
-    font-size: 56px;
-    margin-top: 48px;
+.titulo-cabecera{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 35%;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    border: solid;
+    border-radius: 8px;
 }
-
-.subtitulo-patrocinadores {
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 64px;
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background: #ffffff;
+}
+.texto1{
+    text-align: justify;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+}
+.contacto .titulo-footer, .subtitulo-footer{
+    margin-left: 9%;
 }
 footer {
-    background: #fff;
-}
-.nosotros{
-    height: 20%;
-    margin-top: 2%;
-    margin-left: 10%;
-
-}
-.imagenes-logos{
-    margin-left: 10%;
-    margin-top: 3%;
-    margin-bottom: 2%;
-}
-.nosotros1, .nosotros2{
-    font-size: 17px;
-}
-.pie-pagina{
-    background: #353535;
-    height: 10%;
-    width: 100%;
-    position: absolute;
-}
-.iconos{
-    right: 10%;
-    margin-top: 1%;
-    
-}
-.derechos{
-    font-size: 13px;
-    margin-top: 3%;
-    margin-left: 45%;
+    background: #494949;
     color: #fff;
-    position: absolute;
-}
-
-.titulo-footer,
-.subtitulo-footer {
-    color: #fff;
+    height: 30px;
     text-align: center;
-    font-weight: 400;
-    font-size: 56px;
+    margin-bottom: 0%;
+}
+/*.face{
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+.insta{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 2%;
+}
+.you{
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 2%;
+}*/
+#botonSubir {
+    bottom:0px;
+
+    margin-right:20px;
+    padding:10px;
+    position:fixed;
+    right:0px;
+    -moz-border-top-left-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    cursor:pointer;
 }
 
-.subtitulo-footer {
-    font-size: 16px;
-    margin-bottom: 64px;
-}
 
-form {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: auto;
-}
-input[type="text"],
-input[type="email"] {
-    display: inline-block;
-    width: 48%;
-    padding: 13px;
-    border: none;
-    color: #fff;
-    font-family: 'open sans';
-    background: rgba(37, 37, 33, .7);
-    margin-bottom: 16px;
-    border-top: 5px solid rgba(37, 37, 33, .7);
-}
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-top: 5px solid rgba(255, 255, 255, 0.7);
-}
-
-textarea {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    max-height: 200px;
-    min-height: 200px;
-    background: rgba(37, 37, 33, .7);
-    padding: 13px;
-    border: none;
-    color: #fff;
-    font-family: 'open sans';
-    margin-bottom: 16px;
-}
-
-input[type="submit"] {
-    display: inline-block;
-    padding: 13px;
-    border: none;
-    color: #fff;
-    background: rgba(37, 37, 33, .7);
-    width: 96px;
-}
-/* Responsive */
-
-@media screen and (max-width:900px) {
-    .card {
-        width: 48%;
-    }
-}
-
-@media screen and (max-width:610px) {
-    header .textos {
-        margin-top: 130px;
-    }
-
-    header .titulo {
-        font-size: 75px;
-    }
-
-    .none {
-        display: none
-    }
-
-    .imagenes {
-        flex-grow: 1;
-    }
-
-    .card {
-        width: 90%;
-    }
-
-    .fondo {
-        height: auto;
-    }
-
-    .especial {
+@media screen and (max-width: 500px){
+    .titulo{
         display: none;
     }
-
-    .cliente {
-        width: 90%;
-        height: 200px;
-        margin-bottom: 50px;
+    .titulo-cabecera{
+        margin-left: 10%;
+        
     }
-}
-
-@media screen and (max-width:380px) {
-    header .textos {
-        margin-top: 100px;
+    header{
+        height: 280px;
     }
-
-    header .titulo {
-        font-size: 65px;
-    }
-
-    header .subtitulo {
-        font-size: 25px;
-        margin-bottom: 32px;
-    }
-
-    .sobre-nosotros {
-        font-size: 46px;
-    }
-
-    .slogan {
-        font-size: 20px;
-    }
-
-    .titulo-patrocinadores {
-        font-size: 46px;
-    }
-
-    .subtitulo-patrocinadores {
-        font-size: 20px;
+    .texto1{
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
